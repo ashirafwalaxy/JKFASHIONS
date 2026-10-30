@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JK FASHIONS | FAQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg-primary: #0a0a0a; --bg-secondary: #141414; --bg-card: #181818;
+      --accent-gold: #c5a059; --accent-gold-hover: #e0b86c;
+      --text-main: #f5f5f5; --text-muted: #a0a0a0; --border-dark: #2a2a2a;
+      --font-heading: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    body { background-color: var(--bg-primary); color: var(--text-main); font-family: var(--font-body); line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    
+    .announcement-bar { background-color: var(--bg-secondary); color: var(--accent-gold); border-bottom: 1px solid var(--border-dark); text-align: center; padding: 10px 20px; font-size: 0.75rem; letter-spacing: 2px; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 22px 5%; background: rgba(10,10,10,0.95); border-bottom: 1px solid var(--border-dark); position: sticky; top: 0; z-index: 1000; }
+    .nav-links a { margin-right: 20px; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); }
+    .nav-links a:hover, .nav-links a.active { color: var(--accent-gold); }
+    .logo-title { font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; letter-spacing: 3px; }
+    .logo-subtitle { display: block; font-size: 0.55rem; letter-spacing: 2px; color: var(--accent-gold); }
+
+    .faq-container { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+    h1 { font-family: var(--font-heading); font-size: 3rem; margin-bottom: 40px; letter-spacing: 2px; text-align: center; }
+    .faq-item { background: var(--bg-card); border: 1px solid var(--border-dark); padding: 25px; margin-bottom: 20px; }
+    .faq-item h3 { font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 10px; color: var(--accent-gold); }
+    .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+    footer { background: var(--bg-secondary); padding: 40px 5%; text-align: center; border-top: 1px solid var(--border-dark); font-size: 0.8rem; color: var(--text-muted); margin-top: 60px; }
+  </style>
+</head>
+<body>
+  <div class="announcement-bar">FREQUENTLY ASKED QUESTIONS</div>
+  
+  <header class="navbar">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="faq.html" class="active">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div style="text-align: center;">
+      <a href="index.html" class="logo-title">JK FASHIONS</a>
+      <span class="logo-subtitle">MENSWEAR</span>
+    </div>
+    <div></div>
+  </header>
+
+  <div class="faq-container">
+    <h1>FREQUENTLY ASKED QUESTIONS</h1>
+    
+    <div class="faq-item">
+      <h3>How do I schedule a bespoke fitting session?</h3>
+      <p>You can book a private consultation directly through our Contact page or by requesting an appointment with our master clothiers in London, Milan, New York, or Tokyo.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is your shipping policy?</h3>
+      <p>We offer complimentary worldwide express shipping on all orders over $500, fully insured and tracked through our premium courier partners.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What materials are used in your suits?</h3>
+      <p>Our suits are crafted from Super 150s Australian Merino wool, pure silk linings, and horns buttons sourced exclusively from northern Italian mills.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 JK FASHIONS. All rights reserved.</p>
+  </footer>
+</body>
+</html>

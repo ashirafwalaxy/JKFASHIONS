@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JK FASHIONS | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg-primary: #0a0a0a; --bg-secondary: #141414; --bg-card: #181818;
+      --accent-gold: #c5a059; --accent-gold-hover: #e0b86c;
+      --text-main: #f5f5f5; --text-muted: #a0a0a0; --border-dark: #2a2a2a;
+      --font-heading: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    body { background-color: var(--bg-primary); color: var(--text-main); font-family: var(--font-body); line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    
+    .announcement-bar { background-color: var(--bg-secondary); color: var(--accent-gold); border-bottom: 1px solid var(--border-dark); text-align: center; padding: 10px 20px; font-size: 0.75rem; letter-spacing: 2px; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 22px 5%; background: rgba(10,10,10,0.95); border-bottom: 1px solid var(--border-dark); position: sticky; top: 0; z-index: 1000; }
+    .nav-links a { margin-right: 20px; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); }
+    .nav-links a:hover, .nav-links a.active { color: var(--accent-gold); }
+    .logo-title { font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; letter-spacing: 3px; }
+    .logo-subtitle { display: block; font-size: 0.55rem; letter-spacing: 2px; color: var(--accent-gold); }
+
+    .contact-container { max-width: 900px; margin: 60px auto; padding: 0 20px; }
+    h1 { font-family: var(--font-heading); font-size: 3rem; margin-bottom: 30px; letter-spacing: 2px; text-align: center; }
+    form { display: flex; flex-direction: column; gap: 20px; background: var(--bg-card); padding: 35px; border: 1px solid var(--border-dark); }
+    label { font-size: 0.8rem; letter-spacing: 1.5px; color: var(--text-muted); display: block; margin-bottom: 8px; }
+    input, textarea { width: 100%; padding: 14px; background: var(--bg-primary); border: 1px solid var(--border-dark); color: var(--text-main); }
+    button { background: var(--accent-gold); color: var(--bg-primary); border: none; padding: 16px; font-weight: 700; letter-spacing: 2px; cursor: pointer; }
+    button:hover { background: var(--accent-gold-hover); }
+
+    footer { background: var(--bg-secondary); padding: 40px 5%; text-align: center; border-top: 1px solid var(--border-dark); font-size: 0.8rem; color: var(--text-muted); margin-top: 60px; }
+  </style>
+</head>
+<body>
+  <div class="announcement-bar">CONNECT WITH OUR CLIENT CONCIERGE</div>
+  
+  <header class="navbar">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <div style="text-align: center;">
+      <a href="index.html" class="logo-title">JK FASHIONS</a>
+      <span class="logo-subtitle">MENSWEAR</span>
+    </div>
+    <div></div>
+  </header>
+
+  <div class="contact-container">
+    <h1>CONTACT CONCIERGE</h1>
+    <form onsubmit="event.preventDefault(); alert('Inquiry sent successfully!');">
+      <div>
+        <label>YOUR NAME</label>
+        <input type="text" required>
+      </div>
+      <div>
+        <label>EMAIL ADDRESS</label>
+        <input type="email" required>
+      </div>
+      <div>
+        <label>MESSAGE</label>
+        <textarea rows="5" required></textarea>
+      </div>
+      <button type="submit">SEND MESSAGE</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 JK FASHIONS. All rights reserved.</p>
+  </footer>
+</body>
+</html>
